@@ -16,6 +16,11 @@ SECRET_KEY = 'django-insecure-3ud7fcz1!9d+jlit@1fy3d+#296^b%4#!#==&uy5yg(q&lqnb3
 DEBUG = True
 
 ALLOWED_HOSTS = []
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.DjangoModelPermissions',
+    )
+}
 
 
 # Application definition
@@ -97,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Dhaka'
 
 USE_I18N = True
 
